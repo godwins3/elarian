@@ -1,5 +1,0 @@
-flaskapi
-pymongo
-typing
-pydantic
-uvicorn
