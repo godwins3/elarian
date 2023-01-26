@@ -1,0 +1,6 @@
+pymongo
+fastapi
+pydantic
+typing
+uvicorn
+requests
