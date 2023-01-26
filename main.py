@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi_mail import FastMail, MessageSchema,ConnectionConfig
 from pymongo import MongoClient
 from typing import List,Optional
 from pydantic import BaseModel
