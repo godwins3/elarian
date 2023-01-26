@@ -9,8 +9,6 @@ import requests
 
 app = FastAPI()
 
-
-
 # Connect to the MongoDB database
 client = MongoClient('mongodb://localhost:27017')
 db = client['airworks']

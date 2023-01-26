@@ -61,8 +61,3 @@ jobs:
           app-name: 'airworkske'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_66300A0D1C2F463EBBA2CAE8782DF438 }}
-
-      - name: 'running'
-        run: |
-          python3.10 main
-
