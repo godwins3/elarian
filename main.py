@@ -14,6 +14,12 @@ client = MongoClient('mongodb://localhost:27017')
 db = client['airworks']
 collection = db['users']
 
+class Signup(BaseModel):
+    username: str
+    password: str
+    industry: str
+    email: str
+
 class User(BaseModel):
     username: str
     password: str
@@ -23,7 +29,7 @@ async def read_root():
     return {"Hello": "World"}
     
 @app.post("/signup")
-async def signup(user: User):
+async def signup(user: Signup):
     db = client["airworks"]
     existing_user = db.users.find_one({"username": user.username})
     if existing_user is not None:
